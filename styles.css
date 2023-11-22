@@ -1,0 +1,264 @@
+aside {
+    position static;
+    width 20%;
+    padding-left 15px;
+    padding-right 15px;
+    padding-bottom 15px;
+    margin-left -340px;
+    margin-right 15px;
+    margin-top -40px;
+    float left;
+    font-style italic;
+    background-color lightgray;
+  }
+
+body, ul, li, h1, h2{
+    margin 0;
+    padding 0;
+    font-family arial;
+
+}
+
+main{
+    max-width 100%;
+    width 1200px;
+    margin 80px auto;
+    padding 0 40px;
+    box-sizing border-box;
+}
+
+article h2{
+    color rgb(82, 82, 82);
+    font-size 48px;
+}
+
+article p{
+    line-height 2em;
+    color rgb(82, 82, 82);
+}
+
+header{
+    background-color rgba(8, 99, 8, 0.61);
+    padding 3px;
+    text-align center;
+    width 100%;
+    position fixed;
+    z-index 1;
+    top 0;
+    left 0;
+}
+
+header h1{
+    color white;
+    border 15px solid rgb(29, 10, 10);
+    padding 6px 12px;
+    display inline-block;
+    border-radius 6px;
+}
+
+.banner{
+    position relative;
+}
+
+.banner img{
+    max-width 100%;
+    width 1900px;
+    height 600px;
+    object-fit cover;
+
+    
+}
+
+.banner .welcome{
+    background-color rgba(10, 194, 10, 0.438);
+    color white;
+    padding 30px;
+    position absolute;
+    left 0;
+    top 30%;
+}
+
+.banner h2{
+    font-size 40px;
+}
+
+.banner h2 span{    
+    font-size 2cm;
+}
+
+nav{
+    background-color rgba(46, 24, 24, 0.651);
+    padding 20px;
+    position sticky;
+    top 85px;
+}
+
+nav ul{
+    white-space nowrap;
+    max-width 1200px;
+    margin 0 auto;
+}
+
+nav li{
+    width 25%;
+    display inline-block;
+    font-size 24px;
+}
+
+nav li a{
+    text-decoration none;
+    color white;
+}
+
+.images{
+    text-align center;
+    margin 80px 0;
+    white-space nowrap;
+    
+}
+
+.images li{
+    display table-row;
+}
+
+.images li img{
+    max-width 100%;
+}
+
+.join{
+    color rgba(255, 255, 255, 0.842);
+    background rgba(46, 24, 24, 0.651);
+    text-align center;
+    padding 20px 5px;
+    color white;
+}
+
+.join h2{
+    font-size 32px;
+}
+
+form input{
+    margin 20px 0;
+    padding 10px 10px;
+    font-size 18px;
+    border-radius 12px;
+    border 4px solid black;
+}
+
+footer{
+    background-color rgba(8, 99, 8, 0.61);
+    padding 10px;
+    text-align center;
+}
+
+pseduo classes 
+
+nav li ahover{
+    text-decoration underline black;
+    background-color rgb(21, 71, 21);
+    padding 0 5px;
+    border solid black;
+    border-radius 10px;
+}
+
+ .images li imghover{
+    position fixed; will come back to this....
+    border solid black;
+    background-color aliceblue;
+} 
+
+ form inputfocus{
+    border 4px groove black;
+} 
+
+form inputhover{
+    
+    border solid rgb(0, 0, 0);
+    padding 11px 11px;
+}
+
+form inputfocus{
+    outline none;
+}
+
+form inputvalid{
+    border 4px solid rgba(8, 99, 8, 0.61);
+}
+
+article pfirst-line{
+    font-weight bold;
+}
+
+ pselection{
+    background-color rgb(245, 183, 68);
+    color greenyellow;
+} 
+
+ pafter{
+    content '';
+} 
+
+ responsive styles 
+
+@media screen and (max-width 1400px){
+    .banner .welcome h2{
+        font-size 25px;
+    }
+    .banner h2 span{
+        font-size 50px;
+    }
+    nav li{
+        font-size 18px;
+    }
+}
+
+@media screen and (max-width 970px){
+    .banner .welcome h2{
+        font-size 18px;
+    }
+    .banner h2 span{
+        font-size 40px;
+    }
+    
+}
+
+@media screen and (max-width 700px){
+    .banner .welcome{
+        position relative;
+        text-align center;
+        font-size 18px;
+        padding 8px;
+    }
+    .banner .welcome br{
+        display none;
+    }
+    .banner h2 span{
+        font-size 18px;
+    }
+    nav li{
+        font-size 13px;
+    }
+    .images li{
+        width 100%;
+        margin 20px auto;
+        display block;
+    }
+}
+
+@media screen and (max-width 700px){
+    nav li{
+        font-size 20px;
+        display block;
+        position sticky;
+        margin 4px 0;
+        width 100%;
+    }
+    header{
+        position relative;
+    }
+    nav{
+        background-color rgb(46, 24, 24);
+        top 0;
+        
+    }
+}
