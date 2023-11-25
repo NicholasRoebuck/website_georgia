@@ -1,6 +1,6 @@
 aside {
     position: static;
-    width: 20%;
+    width: 23%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -10,10 +10,11 @@ aside {
     float: left;
     font-style: italic;
     background-color: lightgray;
+    
   }
   .right_aside {
     position: static;
-    width: 20%;
+    width: 23%;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -25,6 +26,9 @@ aside {
     background-color: lightgray;
   }
 
+aside li{
+    list-style: none;
+}
 
 body, ul, li, h1, h2{
     margin: 0;
@@ -186,6 +190,18 @@ footer{
     text-align: center;
 }
 
+.ref h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.ref table, td, th{
+    text-align: center;
+    border: 8px solid rgba(46, 24, 24, 0.651);
+    border-radius: 8%;
+    padding: 1px 40px;
+    margin: 20px auto;
+}
 
 /*pseduo classes */
 
@@ -221,9 +237,7 @@ form input:valid{
     border: 4px solid rgba(8, 99, 8, 0.61);
 }
 
-article p::first-line{
-    font-weight: bold;
-}
+
 
 /* p::selection{
     background-color: rgb(245, 183, 68);
