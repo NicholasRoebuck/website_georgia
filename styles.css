@@ -185,7 +185,7 @@ form input{
 }
 
 footer{
-    background-color: rgba(8, 99, 8, 0.61);
+    background-color: rgba(128, 128, 128, 0.486);
     padding: 10px;
     text-align: center;
 }
@@ -197,17 +197,19 @@ footer{
 
 .ref table, td, th{
     text-align: center;
-    border: 8px solid rgba(46, 24, 24, 0.651);
+    border: 5px solid rgba(46, 24, 24, 0.651);
     border-radius: 8%;
     padding: 1px 40px;
     margin: 20px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*pseduo classes */
 
 nav li a:hover{
     text-decoration: underline black;
-    background-color: rgb(21, 71, 21);
+    background-color: rgba(255, 0, 0, 0.514);
     padding: 0 5px;
     border: solid black;
     border-radius: 10px;
