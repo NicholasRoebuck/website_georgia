@@ -205,6 +205,12 @@ footer{
     padding-bottom: 10px;
 }
 
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
 /*pseduo classes */
 
 nav li a:hover{
@@ -239,8 +245,84 @@ form input:valid{
     border: 4px solid rgba(8, 99, 8, 0.61);
 }
 
+#atl_1:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
 
+#atl_2:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
 
+#atl_3:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#atl_4:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#atl_5:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#sav_1:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#sav_2:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#sav_3:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#tybee_1:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#tybee_2:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#tybee_3:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#tybee_4:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#tybee_5:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#tybee_6:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#ga_1:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#ga_2:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#ga_3:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#ga_4:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
+#ga_5:target{
+    color: rgba(168, 25, 25, 0.685);
+    scroll-margin-top: 200px;
+}
 /* p::selection{
     background-color: rgb(245, 183, 68);
     color: greenyellow;
