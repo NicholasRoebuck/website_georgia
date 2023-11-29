@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Welcome to Georgia-Subscription</title>
+</head>
+<body>
+   <header>
+    <h1>The State of Georgia</h1>
+   </header>
+
+   <section class="banner">
+     <img src="img/georgia-flag.jpg" alt="the flag of the state of Georgia">
+     <div class="welcome">
+      <h2>Welcome to<br><span>Georgia</span></h2>
+     </div>
+   </section>
+   <nav class="main-nav">
+    <ul>
+        <li><a href="/index.html" class="ga">About Georgia</a></li>
+        <li><a href="/atlanta.html" class="atl">Discover Atlanta</a></li>  
+        <li><a href="/savannah.html" class="sav">Discover Savannah</a></li>
+        <li><a href="/tybee_island.html" class="tybee">Discover Tybee Island</a></li>
+    </ul>
+   </nav>
+
+   <main>
+    <h2>Subscription form</h2>
+    <form id="user_info" class="user_info" action="/completed_page.html" target="_blank">
+        <div class="name">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last name" required>
+            <br><br><br>
+        </div>
+        <div class="email">
+            <label for="email">Enter email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br><br><br>
+        </div>
+        <div class="gender">
+            <label for="form_gender">Select Gender (optional):</label><br>
+            <input type="radio" id="man" name="gender" value="Man">
+            <label for="man">Man</label><br>
+            <input type="radio" id="woman" name="gender" value="Woman">
+            <label for="woman">Woman</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br><br>
+        </div>
+        <div class="questions">
+            <label for="questions">Questions?</label><br>
+            <textarea name="questions" id="questions" cols="30" rows="10" placeholder="Questions..."></textarea>
+            <br>
+        </div>
+        <input type="submit">
+    </form>
+    <!-- <script type="text/javascript"></script> -->
+    
+   </main>
+   
+   <footer>
+    <p class="footer">Copyright 2023</p>
+   </footer>
+
+
+
+</body>
+</html>
