@@ -29,17 +29,25 @@
 
    <main>
     <h2>Subscription form</h2>
-    <form id="user_info" class="user_info" action="/completed_page.html" target="_blank">
+    <form id="user_info" class="user_info" action="" onsubmit="validateForm(event)" target="_blank">
         <div class="name">
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name"><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Last name" required>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name">
             <br><br><br>
         </div>
         <div class="email">
             <label for="email">Enter email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="email" id="email" name="email" placeholder="Enter email" required onblur="validEmail()"><br>
+            <div class="value_error">
+                <p id="value_error"></p>
+            </div>
+            <label for="v_email"> Re-enter email:</label><br>
+            <input type="email" id="v_email" name="v_email" placeholder="Verify email" required onblur="matchingEmail()"><br>
+            <div class="match_error">
+                <p id="match_error"></p>
+            </div>
             <br><br><br>
         </div>
         <div class="gender">
@@ -57,9 +65,46 @@
             <textarea name="questions" id="questions" cols="30" rows="10" placeholder="Questions..."></textarea>
             <br>
         </div>
-        <input type="submit">
+        <input type="submit" value="Submit">
     </form>
-    <!-- <script type="text/javascript"></script> -->
+
+    <script>
+        let valid_email = document.getElementById("v_email");
+        let email = document.getElementById("email");
+        let value_error = document.getElementById("value_error");
+        let match_error = document.getElementById("match_error");
+
+        function validEmail(){
+            if(email.value == email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+                value_error.innerHTML = "";
+            }
+            else{
+                value_error.innerHTML = "Please enter a valid email addess...";
+            }
+            
+        }
+        function matchingEmail(){
+            if(valid_email.value == email.value) {
+                match_error.innerHTML = "";
+            } else {
+                match_error.innerHTML = "These emails do not match...";
+            }
+        }
+        function submittedForm(){
+            alert("Thanks for joining our newsletter! Your form has been submitted.")
+        }
+        function validateForm(event){
+            validEmail();
+            matchingEmail();
+            if(value_error.innerHTML !== "" || match_error.innerHTML !== ""){
+                event.preventDefault();
+                alert("Submission failed. Please review your information.")
+            } else{
+                submittedForm();
+                window.location.href = "/index.html";
+            }
+        }
+    </script>
     
    </main>
    

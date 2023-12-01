@@ -176,8 +176,20 @@ nav li a{
     color: white;
 }
 
-.join h2{
-    font-size: 32px;
+.join h4{
+    font-size: 20px;
+    border: 6px solid black;
+    width: 20%;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.join h4 a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color:rgb(2, 2, 165);
 }
 
 form input{
@@ -211,9 +223,18 @@ footer{
 
 html{
     scroll-behavior: smooth;
-    
 }
 
+.value_error{
+    display: block;
+    position: relative;
+    color: red;
+}
+.match_error{
+    display: block;
+    position: relative;
+    color: red;
+}
 
 /*pseduo classes */
 
